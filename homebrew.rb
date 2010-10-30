@@ -20,4 +20,3 @@ dep 'zsh', :template => 'brew'
 dep 'ack', :template => 'brew'
 
 dep 'rsync', :template => 'brew'
-

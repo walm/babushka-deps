@@ -1,6 +1,6 @@
 dep 'client' do
   requires {
-   on :osx, 'xcode tools', 'brew', 'rsync', 'user shell setup', 'LaunchBar.app', 'Skitch.app', 'Skype.app', 'Google Chrome.app', 'Firefox.app', 'LimeChat.app', 'Echofon.app', 'Cloud.app'
+   on :osx, 'xcode tools', 'brew', 'rsync', 'user shell setup', 'LaunchBar.app', 'Skitch.app', 'Skype.app', 'Google Chrome.app', 'Firefox.app', 'LimeChat.app', 'Echofon.app', 'Cloud.app', 'Cinch.app'
   }
 end
 

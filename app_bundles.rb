@@ -11,7 +11,7 @@ dep 'LaunchBar.app' do
 end
 
 dep 'Skype.app' do
-  source 'http://download.skype.com/macosx/Skype_2.8.0.851.dmg'
+  source 'http://download.skype.com/macosx/Skype_2.8.0.863.dmg'
 end
 
 dep 'Transmit.app' do
@@ -57,4 +57,8 @@ end
 
 dep 'Kaleidoscope.app' do
   source 'http://d38sv94p198wrl.cloudfront.net/1.0.2_24/Kaleidoscope.zip'
+end
+
+dep 'Cinch.app' do
+  source 'http://irradiatedsoftware.com/download/Cinch.zip'
 end
