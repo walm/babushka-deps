@@ -9,3 +9,9 @@ dep 'develop' do
     on :osx, 'client', 'rvm all', 'Transmit.app', 'HTTP Client.app', 'xScope.app', 'Titanium Developer.app', 'Kaleidoscope.app'
   }
 end
+
+dep 'server' do
+  requires {
+    on :linux, 'passwordless ssh logins', 'webserver running.nginx'
+  }
+end

@@ -1,0 +1,22 @@
+# <%= generated_by_babushka %>
+
+server_name <%= var :domain %> <%= var :extra_domains, :default => '' %> <%= var :www_aliases %>;
+root <%= var(:rails_root) / 'public' %>;
+passenger_enabled on;
+passenger_use_global_queue on;
+rails_env <%= var :rails_env, :default => 'production' %>;
+
+if (-f $document_root/system/maintenance.html) {
+  rewrite ^(.*)$ /system/maintenance.html break;
+}
+
+location ~* \.(js|css|jpe?g|png|gif|ico|swf)$ {
+  if ($request_uri ~ "\?[0-9]+$") {
+    expires max; # cache timestamped assets forever...
+    break;
+  }
+  if ($request_uri !~ "\?[0-9]+$") {
+    expires 1d; # ...and others for 1 day
+    break;
+  }
+}
