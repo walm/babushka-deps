@@ -1,6 +1,6 @@
 dep 'client' do
   requires {
-   on :osx, 'xcode tools', 'brew', 'rsync', 'user shell setup', 'LaunchBar.app', 'Skitch.app', 'Skype.app', 'Google Chrome.app', 'Firefox.app', 'LimeChat.app', 'Echofon.app', 'Cloud.app', 'Cinch.app'
+   on :osx, 'xcode tools', 'brew', 'rsync', 'user shell setup', 'LaunchBar.app', 'Skitch.app', 'Skype.app', 'Google Chrome.app', 'Firefox.app', 'LimeChat.app', 'Echofon.app', 'Cloud.app', 'Cinch.app', 'Spotify.app'
   }
 end
 
@@ -12,6 +12,6 @@ end
 
 dep 'server' do
   requires {
-    on :linux, 'passwordless ssh logins', 'webserver running.nginx'
+    on :linux, 'passwordless ssh logins', 'webserver running.nginx', 'mysql configured'
   }
 end

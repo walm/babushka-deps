@@ -95,3 +95,7 @@ dep 'zlib headers.managed' do
   installs { via :apt, 'zlib1g-dev' }
   provides []
 end
+dep 'scala.managed'
+dep 'java.managed' do
+  installs { via :apt, 'sun-java6-jdk' }
+end

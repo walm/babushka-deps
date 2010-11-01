@@ -62,3 +62,11 @@ end
 dep 'Cinch.app' do
   source 'http://irradiatedsoftware.com/download/Cinch.zip'
 end
+
+dep 'Spotify.app' do
+  source 'http://www.spotify.com/download/Spotify.dmg'
+end
+
+dep 'Google Notifier.app' do
+  source 'http://dl.google.com/mac/install/GoogleNotifier.dmg'
+end
