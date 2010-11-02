@@ -70,3 +70,7 @@ end
 dep 'Google Notifier.app' do
   source 'http://dl.google.com/mac/install/GoogleNotifier.dmg'
 end
+
+dep 'AppZapper.app' do
+  source 'http://www.appzapper.com/mint/pepper/orderedlist/downloads/download.php?file=http%3A//www.appzapper.com/downloads/appzapper.dmg'
+end
